@@ -5,5 +5,6 @@ LABEL maintainer="Eyevinn Technology <info@eyevinn.se>"
 WORKDIR /app
 ADD . .
 RUN npm install 
+RUN mv non-existent fail
 RUN npm run build
 CMD ["npm", "start"]
